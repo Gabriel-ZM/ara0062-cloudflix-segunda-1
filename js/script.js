@@ -25,6 +25,13 @@ emailInput.addEventListener('blur', function() {
 validateEmail(emailInput);
 });
 
+emailInput.addEventListener('keypress', function() {
+    input.setCustomValidity('');
+});
+
+emailInput.addEventListener('mouseover', function(){
+    alert("Você passou o mouse sobre o campo");
+});
 
 // 3. Adiciona o ouvinte de evento 'submit' ao formulário para verificação final
 
